@@ -3,7 +3,6 @@
 namespace MyApp\Tasks;
 
 use Phalcon\Cli\Task;
-use Phalcon\Logger\Adapter\Stream;
 
 class RemovelogTask extends Task
 {
@@ -18,9 +17,5 @@ class RemovelogTask extends Task
                 unlink($path); // remove it
             }
         }
-    }
-    public function createAction()
-    {
-        echo 'logs will be created here' . PHP_EOL;
     }
 }

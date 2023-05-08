@@ -51,7 +51,6 @@ $container->set(
 );
 
 // cache
-// cache
 $container->set(
     'cache',
     function () {
@@ -64,11 +63,6 @@ $container->set(
         return new Stream($serializerFactory, $options);
     }
 );
-
-// config
-// $container->setShared('config', function () {
-//     return include 'app/config/config.php';
-// });
 
 $console = new Console($container);
 
